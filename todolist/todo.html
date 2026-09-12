@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    
+    <div class="page">
+        <div class="heading">
+            <div>
+                <h1>The List</h1>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">DARK</button>
+        </div>
+        <p class="subtitle">keep it short, cross it off.</p>
+
+        <div class="input">
+            <input type="text" id="task-input" placeholder="Write something down…" maxlength="140" autocomplete="off">
+            <button id="add-btn">ADD</button>
+        </div>
+
+        <div class="controls">
+            <div class="tabs">
+                <button class="tab active" data-filter="all">All</button>
+                <button class="tab" data-filter="active">Active</button>
+                <button class="tab" data-filter="done">Done</button>
+            </div>
+            <input type="text" id="search-input" placeholder="search…">
+        </div>
+
+        <ul id="list"></ul>
+
+        <div class="footer">
+            <span id="remaining-count">0 remaining</span>
+            <button id="clear-completed">Clear completed</button>
+            <button id="clear-all">Clear all</button>
+        </div>
+    </div>
+
+    <div id="empty"></div>
+
+    <div id="bg-popup">
+        <div class="popup">
+            <p>Do it in your way !</p>
+            <div class="popup-actions">
+                <button id="popup-cancel">Keep it</button>
+                <button id="popup-confirm">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>

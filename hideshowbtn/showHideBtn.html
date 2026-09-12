@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg Color Changer t</title>
+
+</head>
+<body>
+
+  
+
+    <h1> Toggle Content </h1>
+    <button id="hideBtn">HIDE</button>
+    <button id="showBtn">SHOW</button>
+
+    <h2>hello content</h2>
+
+<script>
+
+    //1. Select the target elm 
+   
+    const hideBtn = document.querySelector("#hideBtn") 
+    const showBtn = document.querySelector("#showBtn") 
+    const h2ContentElm = document.querySelector("h2")
+
+
+
+    
+    showBtn.addEventListener("click",function(){
+        h2ContentElm.style.display="block"
+    })
+    hideBtn.addEventListener("click",function(){
+        h2ContentElm.style.display="none"
+    })
+</script>
+
+
+</body>
+</html>
+
+
+
+</body>
