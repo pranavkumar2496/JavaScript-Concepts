@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg Color Changer t</title>
+   
+</head>
+<body>
+    <h1> Hello BG Color Changer </h1>
+
+    <button id ="redBtn">red</button>  
+    <button id ="greenBtn" >green</button>
+    <button id ="blueBtn" >blue</button>
+    <button id ="yellowBtn">yellow</button>
+
+
+<script>
+       
+       function changeBodyBgColor(colorName = 'white' ){
+        document.body.style.backgroundColor = colorName    
+       }
+
+       redBtn.addEventListener("click",()=>{
+        changeBodyBgColor("red")
+        })
+        
+       greenBtn.addEventListener("click",()=>{
+        changeBodyBgColor("green")
+        })  
+
+       blueBtn.addEventListener("click",()=>{
+        changeBodyBgColor("blue")
+        })
+
+       yellowBtn.addEventListener("click",()=>{
+        changeBodyBgColor("yellow")
+       })
+    
+</script>
+
+
+
+
+
+</body>
+</html>
